@@ -22,7 +22,8 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(10px);
     z-index: 100;
-    max-width: 300px;
+    max-width: 320px;
+    min-width: 300px;
 }
 
 .equation-group {
@@ -46,17 +47,19 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .equation-inputs input {
-    width: 50px;
-    padding: 5px;
+    width: 45px;
+    padding: 4px;
     border: none;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
     text-align: center;
+    font-size: 12px;
+    flex-shrink: 0;
 }
 
 .equation-inputs input:focus {
@@ -100,4 +103,121 @@ body {
 
 #canvas {
     display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #controls {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        min-width: none;
+        width: calc(100% - 20px);
+        padding: 15px;
+    }
+    
+    .equation-group {
+        margin-bottom: 12px;
+        padding: 8px;
+    }
+    
+    .equation-group h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    
+    .equation-inputs {
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+    
+    .equation-inputs input {
+        width: 40px;
+        padding: 3px;
+        font-size: 11px;
+    }
+    
+    .equation-inputs span {
+        font-size: 10px;
+        margin: 0 1px;
+    }
+    
+    #info {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: none;
+        width: calc(100% - 20px);
+        padding: 12px;
+        font-size: 11px;
+    }
+    
+    #resetBtn {
+        padding: 8px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #controls {
+        padding: 10px;
+    }
+    
+    .equation-group {
+        padding: 6px;
+        margin-bottom: 10px;
+    }
+    
+    .equation-group h3 {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+    
+    .equation-inputs {
+        gap: 2px;
+        justify-content: space-between;
+    }
+    
+    .equation-inputs input {
+        width: 35px;
+        padding: 2px;
+        font-size: 10px;
+    }
+    
+    .equation-inputs span {
+        font-size: 9px;
+        margin: 0;
+    }
+    
+    #info {
+        padding: 10px;
+        font-size: 10px;
+    }
+    
+    #resetBtn {
+        padding: 6px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #controls {
+        max-width: 350px;
+    }
+    
+    .equation-inputs input {
+        width: 50px;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .equation-inputs span {
+        font-size: 13px;
+    }
+    
+    .equation-group h3 {
+        font-size: 15px;
+    }
 }
