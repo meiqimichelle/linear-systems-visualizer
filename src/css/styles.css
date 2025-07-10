@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    max-width: 300px;
+}
+
+.equation-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border-left: 4px solid;
+}
+
+.equation-group:nth-child(1) { border-left-color: #D18718; }
+.equation-group:nth-child(2) { border-left-color: #56CFE1; }
+.equation-group:nth-child(3) { border-left-color: #39FDC6; }
+
+.equation-group h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+.equation-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.equation-inputs input {
+    width: 50px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.equation-inputs input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.equation-inputs span {
+    font-size: 12px;
+    margin: 0 2px;
+}
+
+#info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    max-width: 300px;
+    font-size: 12px;
+}
+
+#resetBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #45b7d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#resetBtn:hover {
+    background: #357abd;
+}
+
+#canvas {
+    display: block;
+}
