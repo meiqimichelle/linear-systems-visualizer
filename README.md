@@ -2,17 +2,12 @@
 
 An interactive 3D visualization tool for understanding systems of linear equations and plane intersections in three-dimensional space.
 
-**Try it now: https://meiqimichelle.github.io/linear-systems-visualizer/**
+**Try it: https://meiqimichelle.github.io/linear-systems-visualizer/**
 
 
 ## Purpose One
 
-This visualizer was created to make linear algebra concepts more accessible and intuitive by providing:
-
-- **Visual Understanding**: See how changing coefficients affects plane orientation and position
-- **Interactive Learning**: Play with and explore the planes
-- **Solution Visualization**: Clear display of intersection points (solutions to the system)
-- **Educational Tool**: Perfect for students learning about linear systems and 3D geometry
+This visualizer was created to make linear algebra concepts more accessible and intuitive by providing a visual understanding of how changing coefficients (determinants) affects plane orientation, postiion, and intersection points (aka solutions to the system).
 
 ## Purpose Two
 
@@ -25,15 +20,6 @@ I also made this to explore AI-assisted coding. I am personally studying linear 
 - AI coding assistents seems to have as much trouble with CSS as humans 🤣 They make one requested change and break another. I guess because they can't 'see' regressions. Or, maybe there's a better way to apporach this than my naive efforts.
 - Starting with Claude to prototype was way easier than starting with Claude Code or Amp Code. This may have been because of the nature of the project. It was very convenient to ask Claude to start my project based on my needs and scope, and see it create a single-page index.html file in its right-hand pane. You can toggle this between code and visuals. The only thing better would have been if I could edit the file myself sometimes, too, because asking Claude to re-write the file to change one hex code seemed a waste of tokens, and often slower than what I could have done myself. Maybe there's a way to do that. I didn't try too hard.
 - **All up, this took me between 2 and 3 hours, using a library that I have no expertise in (three.js). That's right. Holy smokes.** 🤯
-
-## Features
-
-- **Real-time 3D Visualization**: Interactive planes that update as you modify equations
-- **Three Plane System**: Visualize systems of three linear equations in three variables
-- **Intersection Detection**: Automatically calculates and displays solution points
-- **Smooth Controls**: Mouse-based camera rotation and zoom
-- **Clean Interface**: Intuitive equation input with color-coded planes
-- **Fully Responsive**: Works seamlessly on desktop, tablet, and mobile devices
 
 ## How to Use
 
