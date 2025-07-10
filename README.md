@@ -24,7 +24,7 @@ I also made this to explore AI-assisted coding. I am personally studying linear 
 - Amp Code's commit process is also great -- it can auto-create commits that are co-authored with you with a lovely commit message and a link to the associated thread.
 - AI coding assistents seems to have as much trouble with CSS as humans 🤣 They make one requested change and break another. I guess because they can't 'see' regressions. Or, maybe there's a better way to apporach this than my naive efforts.
 - Starting with Claude to prototype was way easier than starting with Claude Code or Amp Code. This may have been because of the nature of the project. It was very convenient to ask Claude to start my project based on my needs and scope, and see it create a single-page index.html file in its right-hand pane. You can toggle this between code and visuals. The only thing better would have been if I could edit the file myself sometimes, too, because asking Claude to re-write the file to change one hex code seemed a waste of tokens, and often slower than what I could have done myself. Maybe there's a way to do that. I didn't try too hard.
-- All up, this took me between 2 and 3 hours, using a library that I have no expertise in (three.js). That's right. Holy smokes. 🤯
+- **All up, this took me between 2 and 3 hours, using a library that I have no expertise in (three.js). That's right. Holy smokes.** 🤯
 
 ## Features
 
@@ -96,7 +96,7 @@ This project used an AI-assisted development workflow:
 
 This demonstrates how different AI coding assistants can complement each other in the development lifecycle.
 
-## 🛠 Local Development
+## Local Development
 
 For local development with proper CORS handling:
 ```bash
@@ -111,6 +111,7 @@ npx serve .
 
 ## Ideas (not promises) for Future Enhancements
 
+- [ ] Make it look better. Ya know.
 - [ ] Add support for 2x2 and 4x4 systems
 - [ ] Include step-by-step solution explanations
 - [ ] Add preset examples for common scenarios
